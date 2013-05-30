@@ -1,0 +1,156 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@android:color/black" >
+
+    
+     <include layout="@layout/cabecera"
+        android:id="@+id/cabecera" /> 
+        
+    <ScrollView 
+	    android:id="@+id/botonesScrollView"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    >
+	    
+	   <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal"
+	    android:orientation="vertical"	   
+	    android:scrollbars="vertical"
+	    >
+         
+			     <TextView
+			        android:id="@+id/textPregunta"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"			       
+			        android:text="@string/textPregunta"
+			        android:textColor="@android:color/white"
+			        android:textSize="15sp" /> 
+			           
+ <!-- 
+ 	Parece que maxLines haga caso omiso por lo que he decidido, usando como ejemplo la linea siguiente
+ "¿Esta pregunta es larga para comprobar el comportamiento cuando el texto es largo, de unas cuantas líneas?"
+ 	y haciendo un calculo aproximado,poner un maxLenght de 120 caracteres
+  android:singleLine="true"
+  -->
+                <EditText
+				    android:id="@+id/editTextPregunta"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"				   
+				    android:inputType="textMultiLine"
+				    android:hint="@string/hintPregunta"
+				    android:background="@android:color/white"
+					android:singleLine="true"
+				    android:maxLines="4" 
+    				android:lines="3"	
+    				android:maxLength="180"		     					
+				    android:padding="5dp" />	
+				    
+                <TextView
+			        android:id="@+id/textRespuestaA"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"			       
+			        android:text="@string/textRespuestas"
+			        android:textColor="@android:color/white"
+			        android:layout_marginTop="15dp"
+			        android:textSize="15sp" />    
+          	         
+                <EditText
+				    android:id="@+id/editTextRespuestaA"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:inputType="textMultiLine"
+				    android:hint="@string/hintRespuestaA"
+				    android:background="@android:color/white"				   
+				    android:maxLines="4" 
+    				android:lines="2"	
+    				android:maxLength="180"						  
+				    android:padding="5dp" />
+                
+                 <EditText
+				    android:id="@+id/editTextRespuestaB"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:inputType="textMultiLine"
+				    android:hint="@string/hintRespuestaB"
+				    android:background="@android:color/white"	
+				    android:layout_marginTop="10dp"	
+				    android:maxLines="4" 
+    				android:lines="2"	
+    				android:maxLength="180"
+    				android:padding="5dp" />
+                 
+                  <EditText
+				    android:id="@+id/editTextRespuestaC"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:inputType="textMultiLine"
+				    android:hint="@string/hintRespuestaC"
+				    android:background="@android:color/white"	
+				     android:layout_marginTop="10dp"	
+				    android:maxLines="4" 
+    				android:lines="2"	
+    				android:maxLength="180"		  					  
+				    android:padding="5dp" />
+                  
+                   <EditText
+				    android:id="@+id/editTextRespuestaD"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:inputType="textMultiLine"
+				    android:hint="@string/hintRespuestaD"
+				    android:background="@android:color/white"
+				    android:layout_marginTop="10dp"	
+				    android:maxLines="4" 
+    				android:lines="2"	
+    				android:maxLength="180"		  					  
+				    android:padding="5dp" />		
+				    
+                    <TextView
+			        android:id="@+id/textRespuestaOK"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"			       
+			        android:text="@string/textRespuestaOK"
+			        android:textColor="@android:color/white"
+			        android:layout_marginTop="15dp"
+			        android:textSize="15sp" />      
+			        
+				     <Spinner
+				         android:id="@+id/Spinner_Correct"				      
+				         android:layout_height="wrap_content"
+				         android:layout_width="match_parent"
+				         android:background="@android:color/white"					        		         
+				         android:entries="@array/correct"></Spinner>
+				     
+				   <TextView
+			        android:id="@+id/textImagen"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"			       
+			        android:text="@string/imagenAssociada"
+			        android:textColor="@android:color/white"
+			        android:layout_marginTop="15dp"
+			        android:textSize="15sp" /> 
+			        
+			        <ImageView 
+				         android:id="@+id/ImageViewQuestion"
+				         android:layout_width="150dp"
+				         android:layout_height="150dp"
+				         android:adjustViewBounds="true"
+				         android:layout_gravity="center_horizontal"
+				         android:src="@drawable/noquestion"
+				         android:onClick="seleccionaImagen"/>  
+				    
+				    <Button
+				        android:layout_marginTop="15dp"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:text="@string/SubirP"
+				        android:onClick="registro"/>
+    		</LinearLayout>
+    </ScrollView>
+</LinearLayout>

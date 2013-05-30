@@ -1,0 +1,27 @@
+<!--  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scoresRoot"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black" >
+-->
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/listPlace"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"  >
+        
+        
+        <!-- Alternativa por si no hay ninguna lista, ver nota inferior
+        android:id="@+id/empty_list_view" en lugar de android:id="@android:id/empty" -->
+	     <TextView android:id="@android:id/empty"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:background="#FF0000"
+	               android:text="@string/no_scores"
+	               android:visibility="gone"/>         
+     </FrameLayout>
+
+<!--   </LinearLayout> -->
+
+<!-- android:visibility="gone" ni se ve ni ocupa sitio, y ese bloque sale si no hay nada en la lista(automaticamente) -->

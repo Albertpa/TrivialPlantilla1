@@ -1,0 +1,37 @@
+<scores>
+	<score>
+		<nickname>bishoport</nickname>
+		<avatar>avatar17.jpg</avatar>
+		<puntuacion>60</puntuacion>
+	</score>
+	<score>
+		<nickname>pirata</nickname>
+		<avatar>avatar0.jpg</avatar>
+		<puntuacion>50</puntuacion>
+	</score>
+	<score>
+		<nickname>r2d2</nickname>
+		<avatar>avatar20.jpg</avatar>
+		<puntuacion>40</puntuacion>
+	</score>
+	<score>
+		<nickname>alvueli</nickname>
+		<avatar>avatar15.jpg</avatar>
+		<puntuacion>30</puntuacion>
+	</score>
+	<score>
+		<nickname>Lorato</nickname>
+		<avatar>avatar5.jpg</avatar>
+		<puntuacion>20</puntuacion>
+	</score>
+	<score>
+		<nickname>koko</nickname>
+		<avatar>avatar7.jpg</avatar>
+		<puntuacion>10</puntuacion>
+	</score>
+	<score>
+		<nickname>jaja</nickname>
+		<avatar>avatar22.jpg</avatar>
+		<puntuacion>0</puntuacion>
+	</score>
+</scores> 

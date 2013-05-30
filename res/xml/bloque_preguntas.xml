@@ -1,0 +1,54 @@
+<preguntas>
+
+    <pregunta
+        id="1"
+        correcta="1"
+        cuestion="¿Esta pregunta es larga para comprobar el comportamiento cuando el texto es largo, de unas cuantas líneas?"
+        imagen="q1.png"
+        respuestaA="Esta respuesta es larga para comprobar el comportamiento cuando el texto es largo, de unas cuantas líneas."
+        respuestaB="Esta respuesta es larga para comprobar el comportamiento cuando el texto es largo, de unas cuantas líneas."
+        respuestaC="Respuesta C1"
+        respuestaD="Esta respuesta es larga para comprobar el comportamiento cuando el texto es largo, de unas cuantas líneas." >
+    </pregunta>
+    <pregunta
+        id="2"
+        correcta="2"
+        cuestion="Pregunta 2"
+        imagen="q2.png"
+        respuestaA="Respuesta A2"
+        respuestaB="Respuesta B2"
+        respuestaC="Respuesta C2"
+        respuestaD="Respuesta D2" >
+    </pregunta>
+    <pregunta
+        id="3"
+        correcta="3"
+        cuestion="Pregunta 3"
+        imagen="q3.png"
+        respuestaA="Respuesta A3"
+        respuestaB="Respuesta B3"
+        respuestaC="Respuesta C3"
+        respuestaD="Respuesta D3" >
+    </pregunta>
+    <pregunta
+        id="4"
+        correcta="4"
+        cuestion="Pregunta 4"
+        imagen="q4.png"
+        respuestaA="Respuesta A4"
+        respuestaB="Respuesta B4"
+        respuestaC="Respuesta C4"
+        respuestaD="Respuesta D4" >
+    </pregunta>
+    <pregunta
+        id="5"
+        correcta="1"
+        cuestion="Pregunta 5"
+        imagen="q5.png"
+        respuestaA="Respuesta A5"
+        respuestaB="Respuesta B5"
+        respuestaC="Respuesta C5"
+        respuestaD="Respuesta D5" >
+    </pregunta>
+
+</preguntas>

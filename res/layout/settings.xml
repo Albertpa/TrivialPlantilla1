@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@android:color/black" >
+
+    
+     <include layout="@layout/cabecera"
+        android:id="@+id/cabecera" /> 
+        
+     <LinearLayout 
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         
+          <ImageView 
+	         android:id="@+id/ImageViewAvatar"
+	         android:layout_width="70dp"
+	         android:layout_height="70dp"
+	         android:adjustViewBounds="true"
+	         android:layout_gravity="center_horizontal"
+	         android:src="@drawable/no_avatar"
+	         android:onClick="seleccionaAvatar"/>
+          
+            <LinearLayout 
+		         android:orientation="vertical"
+		         android:layout_width="match_parent"
+		         android:layout_height="wrap_content">
+		         
+                <EditText
+				    android:id="@+id/nicknameEditText"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:inputType="textPersonName"
+				    android:hint="@string/hint_nickname"
+				    android:background="@android:color/white"
+				    android:padding="5dp" />
+		
+				<EditText
+				    android:id="@+id/emailEditText"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_marginTop="3dp"
+				    android:hint="@string/hint_email"
+				    android:inputType="textEmailAddress"
+				    android:background="@android:color/white"
+				    android:padding="5dp"/>
+		         
+            </LinearLayout>     
+     </LinearLayout>
+     
+     
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" >
+            
+         <ImageButton
+            android:id="@+id/dayOfBirthButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_dateOB"
+            android:src="@drawable/btn_dob"
+            android:onClick="onPickDateButtonClick"
+            android:background="@android:color/transparent"/>
+         
+        <TextView
+            android:id="@+id/dayOfBirthTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_dob_not_set"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"  />
+         
+      </LinearLayout>
+      
+     
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <ImageButton
+            android:id="@+id/passwordButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_button_pwd"
+            android:onClick="onSetPasswordButtonClick"
+            android:src="@drawable/btn_pass"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:id="@+id/passwordTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/settings_pwd_not_set"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"  />
+        
+       </LinearLayout>
+            
+     <Spinner
+         android:id="@+id/Spinner_Gender"
+         android:layout_marginTop="5dp"
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:background="@android:color/white"
+         android:entries="@array/genders"></Spinner>
+    
+    <Button
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_registro"
+        android:onClick="registro"/>
+
+</LinearLayout>

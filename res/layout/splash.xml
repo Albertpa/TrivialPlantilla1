@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity" 
+    android:background="@android:color/black">
+
+    
+    <ImageView 
+        android:id="@+id/ImageViewTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_top_colores"
+        android:adjustViewBounds="true"
+        android:layout_centerHorizontal="true"       
+        android:layout_alignParentTop="true"
+        />
+    
+    <ImageView 
+        android:id="@+id/ImagenViewLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_android"
+        android:adjustViewBounds="true"
+        android:layout_centerHorizontal="true"       
+        android:layout_below="@+id/ImageViewTop"
+        />
+    
+    
+    <TextView 
+        android:id="@+id/TextViewTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/tituloSplash"
+        android:layout_below="@+id/ImagenViewLogo"
+        android:gravity="center_horizontal"/>
+    
+    
+    <TableLayout android:id="@+id/TableLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextViewTitulo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/grid">
+        
+        
+        <TableRow android:id="@+id/TableRowFila1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+            
+            
+            <ImageView 
+                android:id="@+id/ImageViewMini1"
+                android:layout_width="84dp"
+                android:layout_height="66dp"
+                android:src="@drawable/mini_1"
+                android:layout_marginRight="10dp"/>
+            
+             <ImageView 
+                android:id="@+id/ImageViewMini2"
+                android:layout_width="84dp"
+                android:layout_height="66dp"
+                android:src="@drawable/mini_2"
+                android:layout_marginRight="10dp"/>
+             
+              <ImageView 
+                android:id="@+id/ImageViewMini3"
+                android:layout_width="84dp"
+                android:layout_height="66dp"
+                android:src="@drawable/mini_3"
+                />
+            
+        </TableRow>
+        
+        
+        <TableRow android:id="@+id/TableRowFila2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+            
+            
+            <ImageView 
+                android:id="@+id/ImageViewMini4"
+                android:layout_width="84dp"
+                android:layout_height="66dp"
+                android:src="@drawable/mini_4"
+                android:layout_marginRight="10dp"/>
+            
+             <ImageView 
+                android:id="@+id/ImageViewMini5"
+                android:layout_width="84dp"
+                android:layout_height="66dp"
+                android:src="@drawable/mini_5"
+                android:layout_marginRight="10dp"/>
+             
+              <ImageView 
+                android:id="@+id/ImageViewMini6"
+                android:layout_width="84dp"
+                android:layout_height="66dp"
+                android:src="@drawable/mini_6"
+                />
+            
+        </TableRow>       
+        
+        
+    </TableLayout>
+    
+    <TextView android:id="@+id/TextViewSubtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/subtitulo"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/subtitulo_splash"
+        android:layout_above="@+id/TextViewPie"/>
+    
+    <TextView android:id="@+id/TextViewPie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="@string/creditos"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:background="#99cc00"
+        android:layout_alignParentBottom="true"/>
+    
+    
+
+</RelativeLayout>

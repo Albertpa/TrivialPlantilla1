@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@android:color/black" >
+
+    <Chronometer
+        android:id="@+id/cronometro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:drawableLeft="@drawable/crono_icon"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+     <TextView
+        android:id="@+id/cronometroAtras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cronometro"
+        android:drawablePadding="5dp"       
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"      
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/contadorPreguntas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/icono_pregunta"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="00/00"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <ImageSwitcher
+        android:id="@+id/ImageSwitcherPregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_below="@+id/cronometro"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp" >
+    </ImageSwitcher>
+    
+   <ProgressBar
+        android:id="@+id/progressBarPregunta"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/cronometro"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:background="@color/toast_color"
+        style="?android:attr/progressBarStyleLarge" >
+    </ProgressBar>
+
+    <TextView
+        android:id="@+id/TextViewPregunta"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/ImageSwitcherPregunta"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:bufferType="spannable"
+        android:isScrollContainer="true"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical"
+        android:text="@string/no_preguntas"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:id="@+id/scrollRespuestas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextViewPregunta"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <!-- Respuesta A -->
+        <LinearLayout
+            android:id="@+id/layoutRespuestas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:id="@+id/TextViewRespuestaA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"
+                android:drawableLeft="@drawable/rectangle_azul"
+                android:drawablePadding="5dp"
+                android:onClick="onRespuesta"
+                android:padding="5dp"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <!-- Respuesta B -->
+
+            <TextView
+                android:id="@+id/TextViewRespuestaB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"
+                android:drawableLeft="@drawable/rectangle_naranja"
+                android:drawablePadding="5dp"
+                android:onClick="onRespuesta"
+                android:padding="5dp"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <!-- Respuesta C -->
+
+            <TextView
+                android:id="@+id/TextViewRespuestaC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"
+                android:drawableLeft="@drawable/rectangle_verde"
+                android:drawablePadding="5dp"
+                android:onClick="onRespuesta"
+                android:padding="5dp"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <!-- Respuesta D -->
+
+            <TextView
+                android:id="@+id/TextViewRespuestaD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"
+                android:drawableLeft="@drawable/rectangle_morado"
+                android:drawablePadding="5dp"
+                android:onClick="onRespuesta"
+                android:padding="5dp"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+     <Button
+         android:id="@+id/reset"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"         
+         android:onClick="resetValues"
+         android:tag="reset"
+         android:text="@string/reset"
+         android:background="@color/reset_color"
+         android:textColor="@android:color/white" />
+
+</RelativeLayout>

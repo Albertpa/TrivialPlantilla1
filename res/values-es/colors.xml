@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color
+        name="menu_color">#33b5e5</color>
+    <color
+        name="menu_glow">#0099cc</color>
+    <color
+        name="link_color">#00F</color>
+    <color name="error_color">#F00</color>
+    <color name="ok_color">#099900</color>    
+</resources>

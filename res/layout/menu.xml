@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity" 
+    android:background="@android:color/black">
+
+    <include layout="@layout/cabecera"
+        android:id="@+id/cabecera"
+        android:layout_alignParentTop="true" />
+    
+    
+    <ListView 
+        android:id="@+id/ListViewMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider"        
+        android:listSelector="@drawable/selector"
+        android:layout_below="@layout/cabecera"  
+        android:layout_marginTop="60dp"/>
+    
+    <ImageView 
+        android:id="@+id/pie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/pie_menu"/>
+
+</RelativeLayout>

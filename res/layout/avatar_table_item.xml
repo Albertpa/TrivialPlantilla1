@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/avatarItem"
+    android:minWidth="70dp"
+    android:minHeight="70dp" 
+    android:layout_margin="10dp"
+    >
+    
+    <!-- solo funciona con minWidth y minHeight
+    	android:layout_width y layout height NO -->
+</ImageView>

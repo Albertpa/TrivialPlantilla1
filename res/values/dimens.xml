@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="menu_item_size">30dp</dimen>
+    <dimen name="help_text_size">7pt</dimen>
+    <dimen name="help_text_padding">20dp</dimen>
+    <dimen name="help_text_fading">25dp</dimen>
+    <dimen name="help_text_drawable_padding">5dp</dimen>
+    <dimen name="rectangle_size">20dp</dimen>
+    <dimen name="tituloSplash">25sp</dimen>
+    <dimen name="subtitulo_splash">18sp</dimen>
+    <dimen name="toast_resultado_size">80dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+</resources>

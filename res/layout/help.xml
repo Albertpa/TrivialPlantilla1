@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HelpActivity" >
+	
+     <include layout="@layout/cabecera"
+        android:id="@+id/cabecera" />
+     
+    <TextView
+        android:id="@+id/TextView_HelpText"        
+        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        android:textStyle="italic"
+        android:padding="@dimen/help_text_padding"
+        android:textSize="@dimen/help_text_size"
+        
+        android:scrollbars="vertical"
+        android:isScrollContainer="true"
+        android:scrollbarStyle="outsideOverlay"
+        
+        android:textColorLink="@color/link_color"
+        android:autoLink="all"
+        android:linksClickable="true"
+        />
+
+</LinearLayout>
